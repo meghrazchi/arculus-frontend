@@ -1,0 +1,23 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #21a1f1;
+    transform: scale(1.05);
+}

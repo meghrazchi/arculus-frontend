@@ -1,0 +1,39 @@
+.game-board {
+    width: 800px;
+    /* Full viewport width */
+    height: 800px;
+    /* Full viewport height */
+    position: relative;
+    background-color: black;
+    /* Game board background color */
+    margin: 0;
+    /* Remove margins */
+    overflow: hidden;
+    /* Prevent content from overflowing */
+    border: none;
+    /* Optional: Remove border */
+}
+
+.paddle {
+    position: absolute;
+    background-color: white;
+    /* Paddle color */
+}
+
+.ball {
+    position: absolute;
+    background-color: red;
+    /* Ball color */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.game-status {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+}
