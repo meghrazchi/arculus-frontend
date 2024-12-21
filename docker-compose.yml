@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  frontend:
+    container_name: frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    ports:
+      - "4200:4200"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/app
+      - /app/node_modules
+    networks:
+      - arculus-network
+    command: [ "npm", "start", "--", "--host", "0.0.0.0" ]
+networks:
+  arculus-network:
+    external: true
