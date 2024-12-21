@@ -1,0 +1,12 @@
+<div class="game-board">
+
+    <div *ngFor="let player of gameState.players" class="paddle" [ngStyle]="getPaddleStyle(player)"></div>
+
+    <div class="ball" [ngStyle]="getBallStyle()"></div>
+
+</div>
+
+
+<div class="game-status">
+    <p>{{ gameStatus }}</p>
+</div>

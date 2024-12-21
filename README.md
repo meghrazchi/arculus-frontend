@@ -2,26 +2,41 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Follow these steps to set up the project locally:
 
-## Code scaffolding
+### 0. Make sure [backend](https://github.com/meghrazchi/arculus-backend) is up and running
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+### 1. Clone the repository
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Clone the repository to your local machine:
 
-## Running unit tests
+```bash
+$ git clone https://github.com/meghrazchi/arculus-backend.git
+$ cd arculus-backend
+```
+### 2. Set up environment variables
+Copy the example environment configuration file:
+```bash
+$ cp .env.example .env
+```
+Edit the .env file and configure the game board dimentions:
+```bash
+BOARD_WIDTH=800
+BOARD_HEIGHT=800
+```
+### 3. Install dependencies
+Run the following command to install the necessary dependencies:
+```bash
+$ npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 4. Run the application locally
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+$ docker-compose up
+```
+Once the application is running, the API will be accessible at:
+- Development Server - [http://localhost:4200/](http://localhost:4200/)
