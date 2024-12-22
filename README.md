@@ -14,7 +14,7 @@ Follow these steps to set up the project locally:
 Clone the repository to your local machine:
 
 ```bash
-$ git clone https://github.com/meghrazchi/arculus-backend.git
+$ git clone https://github.com/meghrazchi/arculus-frontend
 $ cd arculus-backend
 ```
 ### 2. Set up environment variables
