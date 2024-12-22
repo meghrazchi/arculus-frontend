@@ -22,11 +22,6 @@ Copy the example environment configuration file:
 ```bash
 $ cp .env.example .env
 ```
-Edit the .env file and configure the game board dimentions:
-```bash
-BOARD_WIDTH=800
-BOARD_HEIGHT=800
-```
 ### 3. Install dependencies
 Run the following command to install the necessary dependencies:
 ```bash
