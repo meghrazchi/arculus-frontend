@@ -15,7 +15,7 @@ Clone the repository to your local machine:
 
 ```bash
 $ git clone https://github.com/meghrazchi/arculus-frontend
-$ cd arculus-backend
+$ cd arculus-frontend
 ```
 ### 2. Set up environment variables
 Copy the example environment configuration file:
